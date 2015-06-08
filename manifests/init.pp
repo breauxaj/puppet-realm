@@ -1,9 +1,11 @@
-class realm {
+class realm (
+  $label = 'undefined',
+) {
   file { '/etc/realm':
     ensure  => present,
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => "${name}",
+    content => "${label}",
   }
 }
