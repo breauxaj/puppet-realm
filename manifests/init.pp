@@ -4,6 +4,6 @@ class realm {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => "${title}",
+    content => "${name}",
   }
 }
