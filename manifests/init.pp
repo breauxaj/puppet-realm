@@ -4,6 +4,7 @@ class realm (
   include realm::users
   include realm::groups
   include realm::ssh
+  include realm::sudo
 
   file { '/etc/realm':
     ensure  => present,
