@@ -3,6 +3,7 @@ class realm (
 ) {
   include realm::users
   include realm::groups
+  include realm::ssh
 
   file { '/etc/realm':
     ensure  => present,
