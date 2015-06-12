@@ -1,10 +1,10 @@
 class realm (
   $label = 'undefined',
 ) {
-  include realm::users
   include realm::groups
   include realm::ssh
   include realm::sudo
+  include realm::users
 
   file { '/etc/realm':
     ensure  => present,
