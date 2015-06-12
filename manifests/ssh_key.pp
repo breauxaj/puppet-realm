@@ -1,4 +1,4 @@
-class realm::ssh {
+class realm::ssh_key {
   include ::users
   
   $realm_ssh_keys = hiera_hash('realm::ssh_keys',{})

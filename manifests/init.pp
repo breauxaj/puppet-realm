@@ -2,7 +2,7 @@ class realm (
   $label = 'undefined',
 ) {
   include realm::groups
-  include realm::ssh
+  include realm::ssh_key
   include realm::sudo
   include realm::users
 
