@@ -5,6 +5,8 @@ class realm (
   include realm::ssh_key
   include realm::sudo
   include realm::users
+  include realm::rsyslog
+  include realm::postfix
 
   file { '/etc/realm':
     ensure  => present,
@@ -13,4 +15,5 @@ class realm (
     mode    => '0644',
     content => "${label}",
   }
+
 }
