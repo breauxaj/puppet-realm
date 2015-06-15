@@ -2,11 +2,12 @@ class realm (
   $label = 'undefined',
 ) {
   include realm::groups
+  include realm::postfix
+  include realm::rsyslog
+  include realm::ssh
   include realm::ssh_key
   include realm::sudo
   include realm::users
-  include realm::rsyslog
-  include realm::postfix
 
   file { '/etc/realm':
     ensure  => present,
