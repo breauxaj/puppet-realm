@@ -4,7 +4,7 @@ class realm::ssh {
   $realm_ssh = hiera('realm::ssh',{})
 
   ssh::issue { 'default':
-    message => $realm_ssh['issue'],
+    message => $realm_ssh['message'],
   }
 
   ssh::service { 'default':
