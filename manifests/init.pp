@@ -2,6 +2,7 @@ class realm (
   $label = 'undefined',
 ) {
   include realm::groups
+  include realm::hosts
   include realm::postfix
   include realm::rsyslog
   include realm::ssh
