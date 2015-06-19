@@ -1,7 +1,7 @@
 require 'facter'
 Facter.add(:realm) do
   setcode do
-    therealm = 'realm not set'
+    therealm = 'undefined'
     if File.exists?('/etc/realm')
       File.open('/etc/realm', "r") do |f|
         f.each_line do |line|
