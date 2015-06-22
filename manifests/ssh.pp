@@ -1,7 +1,7 @@
 class realm::ssh {
   include ::ssh
 
-  $realm_ssh = hiera('realm::ssh',{})
+  $realm_ssh = hiera_hash('realm::ssh',{})
 
   ssh::config { 'default':
     allowed_groups => $realm_ssh['allowed_groups'],
