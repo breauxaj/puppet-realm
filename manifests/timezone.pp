@@ -1,10 +1,10 @@
 class realm::timezone {
   include ::clock
   
-  $realm_tz = hiera('realm::timezone',{})
+  $realm_clock = hiera('realm::clock',{})
   
   clock::tz { 'default':
-    timezone => $realm_tz['timezone']
+    timezone => $realm_clock['timezone']
   }
 
 }
