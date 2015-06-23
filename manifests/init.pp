@@ -9,6 +9,7 @@ class realm (
   include realm::ssh_key
   include realm::sudo
   include realm::sysctl
+  include realm::timezone
   include realm::users
 
   file { '/etc/realm':
