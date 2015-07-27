@@ -3,6 +3,6 @@ class realm::sysctl {
 
   $realm_sysctl = hiera_hash('realm::sysctl',{})
   
-  create_resources('sysctl::config',$realm_sysctl)
+  create_resources('sysctl::configh',$realm_sysctl)
 
 }
