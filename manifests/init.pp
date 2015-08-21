@@ -3,12 +3,8 @@ class realm (
 ) {
   include realm::groups
   include realm::hosts
-  include realm::postfix
-  include realm::rsyslog
-  include realm::ssh
   include realm::ssh_key
   include realm::sudo
-  include realm::sysctl
   include realm::timezone
   include realm::users
 
